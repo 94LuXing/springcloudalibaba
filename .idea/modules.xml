@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/lx-common/lx-common.iml" filepath="$PROJECT_DIR$/lx-common/lx-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lx-config/lx-config.iml" filepath="$PROJECT_DIR$/lx-config/lx-config.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lx-gateway/lx-gateway.iml" filepath="$PROJECT_DIR$/lx-gateway/lx-gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lx-generator/lx-generator.iml" filepath="$PROJECT_DIR$/lx-generator/lx-generator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lx-sale/lx-sale.iml" filepath="$PROJECT_DIR$/lx-sale/lx-sale.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lx-seata-client-02/lx-seata-client-02.iml" filepath="$PROJECT_DIR$/lx-seata-client-02/lx-seata-client-02.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lx-stock/lx-stock.iml" filepath="$PROJECT_DIR$/lx-stock/lx-stock.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lx-user/lx-user.iml" filepath="$PROJECT_DIR$/lx-user/lx-user.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lx-zipkin/lx-zipkin.iml" filepath="$PROJECT_DIR$/lx-zipkin/lx-zipkin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/parent.iml" filepath="$PROJECT_DIR$/parent.iml" />
+    </modules>
+  </component>
+</project>

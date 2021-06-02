@@ -1,0 +1,37 @@
+spring:
+  application:
+    name: lx-sale-server
+  zipkin:
+    base-url: http://127.0.0.1:9411/ #zipkin server的请求地址
+    discoveryClientEnabled: false #让nacos把它当成一个URL，而不要当做服务名
+  sleuth:
+    sampler:
+      probability: 1.0 #采样的百分
+  datasource:
+    url: jdbc:mysql://82.156.51.218:3306/db_fl_trading?useSSL=false&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai&allowMultiQueries=true
+    username: root
+    password: lxA_Pu%oS8Pl
+    type: com.mysql.cj.jdbc.MysqlDataSource
+  cloud:
+    nacos:
+      discovery:
+          server-addr: 82.156.71.248:9006
+    sentinel:
+      transport:
+        port: 9900
+        dashboard: localhost:7777
+  redis:
+    host: 192.168.159.128
+    port: 6379
+    password:
+server:
+  port: 9003
+  tomcat:
+    max-threads: 10
+feign:
+  sentinel:
+    enabled: true
+rocketmq:
+  name-server: 127.0.0.1:9876 #rocketMQ服务的地址
+  producer:
+    group: sale-order # 生产者组

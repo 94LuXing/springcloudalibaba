@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: lx-config-server
+  zipkin:
+    base-url: http://127.0.0.1:9411/ #zipkin server的请求地址
+    discoveryClientEnabled: false #让nacos把它当成一个URL，而不要当做服务名
+  sleuth:
+    sampler:
+      probability: 1.0 #采样的百分
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 82.156.71.248:9006
+server:
+  port: 9007
+  tomcat:
+    max-threads: 10
+feign:
+  sentinel:
+    enabled: true

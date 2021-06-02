@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: lx-user-server
+  datasource:
+    url: jdbc:mysql://82.156.51.218:3306/db_fl_core?useSSL=false&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai&allowMultiQueries=true
+    username: root
+    password: lxA_Pu%oS8Pl
+    type: com.mysql.cj.jdbc.MysqlDataSource
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 82.156.71.248:9006
+server:
+  port: 9000

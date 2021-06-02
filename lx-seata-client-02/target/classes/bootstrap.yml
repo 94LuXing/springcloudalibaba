@@ -1,0 +1,31 @@
+#spring:
+#  application:
+#    name: lx-seata-client-02
+#  datasource:
+#    url: jdbc:mysql://82.156.51.218:3306/db_fl_trading?useSSL=false&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai&allowMultiQueries=true
+#    username: root
+#    password: lxA_Pu%oS8Pl
+#    type: com.mysql.cj.jdbc.MysqlDataSource
+#  cloud:
+#    nacos:
+#      discovery:
+#        server-addr: 82.156.71.248:9006
+#  redis:
+#    host: 192.168.159.128
+#    port: 6379
+#    password:
+#server:
+#  port: 9004
+#
+## Seata 配置项，对应 SeataProperties 类
+#seata:
+#  application-id: ${spring.application.name} # Seata 应用编号，默认为 ${spring.application.name}
+#  tx-service-group: ${spring.application.name}-group # Seata 事务组编号，用于 TC 集群名
+#  # 服务配置项，对应 ServiceProperties 类
+#  service:
+#    # 虚拟组和分组的映射
+#    vgroup-mapping:
+#      product-service-group: default
+#    # 分组和 Seata 服务的映射
+#    grouplist:
+#      default: 127.0.0.1:8091
